@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="scss/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <a href="#" class="logo">
+            <img src="img/img/logo.svg" alt="">
+        </a>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-top__item tablet-none">
+                    Инженерные изыскания в Москве<br>и Московской области
+                </div>
+                <div class="header-top__item location">
+                    <img src="img/icons/geo-icon.svg" alt="">
+                    115054, г. Москва, ул. Пятницкая, 71/5,<br>строение&nbsp;8,&nbsp;этаж 1, оф. 7
+                </div>
+                <div class="header-top__item center">
+                    <a href="#" class="btn">Обратный звонок</a>
+                </div>
+                <div class="header-top__item">
+                    <img src="img/icons/phone-icon.svg" alt="">
+                    <div class="header-contacts">
+                        <a href="tel:+74951262403 " class="phone">+7 (495) 126 24-03</a>
+                        <a href="mailto:zakaz@aplus.ru" class="email">zakaz@plus.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <a href="#">компания</a>
+                <a href="#">услуги</a>
+                <a href="#">контакты</a>
+                <a href="#">
+                    <img src="img/icons/calc.svg" alt="">
+                    расчет стоимости
+                </a>
+            </div>
+        </div>
+    </header>
+    <div class="menu-mobile">
+        <div class="menu-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28px" height="18px">
+                <path fill-rule="evenodd"  fill="rgb(88, 155, 218)"
+                      d="M-0.000,18.000 L-0.000,14.000 L28.000,14.000 L28.000,18.000 L-0.000,18.000 ZM-0.000,7.000 L28.000,7.000 L28.000,11.000 L-0.000,11.000 L-0.000,7.000 ZM-0.000,-0.000 L28.000,-0.000 L28.000,4.000 L-0.000,4.000 L-0.000,-0.000 Z"></path>
+            </svg>
+        </div>
+    </div>
+    <section>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Калькулятор</li>
+            </ol>
+        </nav>
+        <h1>Калькулятор</h1>
+        <form class="m-form">
+            <!-- progressbar -->
+            <div class="ul-wrap">
+                <ul class="progressbar">
+                    <li class="active"><span></span><strong>Услуга</strong></li>
+                    <li><span></span><strong>Адрес</strong></li>
+                    <li><span></span><strong>Площадь</strong></li>
+                    <li><span></span><strong>Ваши контакты</strong></li>
+                    <li><span></span><strong>Расчет</strong></li>
+                </ul>
+            </div>
+            <!-- fieldsets -->
+            <fieldset>
+                <a href="#" class="question-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0354 9.31757C16.0943 8.47056 17.5765 8.04706 18.8472 8.47056C20.5412 8.89406 22.0235 10.1648 22.4471 12.0707C22.8707 13.7647 22.2354 15.4589 20.753 16.7294C19.6941 17.5764 18.8472 18.8471 18.8472 20.1178C19.059 20.7531 18.6353 21.1766 18.0002 21.1766C17.3648 21.1766 16.9412 20.7531 16.9412 20.1178C16.9412 18.2119 17.7884 16.3059 19.4825 15.0354C20.3295 14.4 20.5412 13.553 20.3295 12.4942C20.1178 11.6472 19.4825 10.8 18.4236 10.5883C17.5766 10.3765 16.9412 10.5883 16.306 11.0118C15.6707 11.4353 15.459 12.2825 15.459 12.9177C15.459 13.553 15.0354 13.9765 14.4001 13.9765C13.7647 13.9765 13.3413 13.553 13.3413 12.9177C13.3413 11.4353 13.9766 10.1645 15.0354 9.31757ZM16.9412 26.4705C16.9412 26.2588 16.9412 25.8353 17.153 25.6235C17.5765 25.2 18.2118 25.2 18.6352 25.6235C18.847 25.8353 19.0588 26.047 19.0588 26.4705C19.0588 26.6823 18.847 27.1058 18.6352 27.1058C18.6352 27.3175 18.2118 27.5293 18 27.5293C17.7882 27.5293 17.3648 27.3175 17.153 27.1058C16.9412 26.894 16.9412 26.6823 16.9412 26.4705ZM18 -7.99894e-05C8.047 -7.99894e-05 0 8.04706 0 17.9999C0 27.953 8.047 35.9999 18 35.9999C27.953 35.9999 36 27.953 36 17.9999C36 8.04706 27.953 -7.99894e-05 18 -7.99894e-05ZM18 33.8824C9.31764 33.8824 2.1176 26.6823 2.1176 17.9999C2.1176 9.31757 9.31764 2.11766 18 2.11766C26.6824 2.11766 33.8824 9.31757 33.8824 17.9999C33.8824 26.6823 26.6824 33.8824 18 33.8824Z"/>
+                    </svg>
+                </a>
+                <div class="form-card">
+                    <h2 class="fs-title">Укажите какие услуги вам нужны</h2>
+                    <div class="form-box">
+                        <div class="form-box__item">
+                            <input type="checkbox" id="check1" class="m-checkbox" name="service">
+                            <label for="check1">
+                            <span class="label-img">
+                                <img src="img/img/check1.jpg" alt="">
+                            </span>
+                                <span class="text">Подготовка технического плана</span>
+                            </label>
+                        </div>
+                        <div class="form-box__item">
+                            <input type="checkbox" id="check2" class="m-checkbox" name="service">
+                            <label for="check2">
+                            <span class="label-img">
+                                <img src="img/img/check2.jpg" alt="">
+                            </span>
+                                <span class="text">Вынос границ участка в натуру</span>
+                            </label>
+                        </div>
+                        <div class="form-box__item">
+                            <input type="checkbox" id="check3" class="m-checkbox" name="service">
+                            <label for="check3">
+                            <span class="label-img">
+                                <img src="img/img/check3.jpg" alt="">
+                            </span>
+                                <span class="text">Подготовка межевого плана</span>
+                            </label>
+                        </div>
+                        <div class="form-box__item">
+                            <input type="checkbox" id="check4" class="m-checkbox" name="service">
+                            <label for="check4">
+                            <span class="label-img">
+                                <img src="img/img/check4.jpg" alt="">
+                            </span>
+                                <span class="text">Исполнительная съемка</span>
+                            </label>
+                        </div>
+                        <div class="form-box__item">
+                            <input type="checkbox" id="check5" class="m-checkbox" name="service">
+                            <label for="check5">
+                            <span class="label-img">
+                                <img src="img/img/check5.jpg" alt="">
+                            </span>
+                                <span class="text">Топографическая съемка</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <a class="next action-button btn">
+                    Дальше
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7548 6.41378L12.3983 1.21434C12.0714 0.897152 11.5415 0.897152 11.2146 1.21434C10.8878 1.53174 10.8878 2.04602 11.2146 2.3632L15.1424 6.17578H0.8369C0.374768 6.17578 -2.39611e-05 6.53955 -2.39611e-05 6.98821C-2.39611e-05 7.43686 0.374768 7.80064 0.8369 7.80064H15.1424L11.2147 11.6132C10.8879 11.9304 10.8879 12.4449 11.2147 12.7621C11.3782 12.9207 11.5924 13.0001 11.8066 13.0001C12.0208 13.0001 12.235 12.9207 12.3984 12.7621L17.7548 7.56266C18.0816 7.24546 18.0816 6.73096 17.7548 6.41378Z"/>
+                    </svg>
+                </a>
+            </fieldset>
+            <fieldset>
+                <a href="#" class="question-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0354 9.31757C16.0943 8.47056 17.5765 8.04706 18.8472 8.47056C20.5412 8.89406 22.0235 10.1648 22.4471 12.0707C22.8707 13.7647 22.2354 15.4589 20.753 16.7294C19.6941 17.5764 18.8472 18.8471 18.8472 20.1178C19.059 20.7531 18.6353 21.1766 18.0002 21.1766C17.3648 21.1766 16.9412 20.7531 16.9412 20.1178C16.9412 18.2119 17.7884 16.3059 19.4825 15.0354C20.3295 14.4 20.5412 13.553 20.3295 12.4942C20.1178 11.6472 19.4825 10.8 18.4236 10.5883C17.5766 10.3765 16.9412 10.5883 16.306 11.0118C15.6707 11.4353 15.459 12.2825 15.459 12.9177C15.459 13.553 15.0354 13.9765 14.4001 13.9765C13.7647 13.9765 13.3413 13.553 13.3413 12.9177C13.3413 11.4353 13.9766 10.1645 15.0354 9.31757ZM16.9412 26.4705C16.9412 26.2588 16.9412 25.8353 17.153 25.6235C17.5765 25.2 18.2118 25.2 18.6352 25.6235C18.847 25.8353 19.0588 26.047 19.0588 26.4705C19.0588 26.6823 18.847 27.1058 18.6352 27.1058C18.6352 27.3175 18.2118 27.5293 18 27.5293C17.7882 27.5293 17.3648 27.3175 17.153 27.1058C16.9412 26.894 16.9412 26.6823 16.9412 26.4705ZM18 -7.99894e-05C8.047 -7.99894e-05 0 8.04706 0 17.9999C0 27.953 8.047 35.9999 18 35.9999C27.953 35.9999 36 27.953 36 17.9999C36 8.04706 27.953 -7.99894e-05 18 -7.99894e-05ZM18 33.8824C9.31764 33.8824 2.1176 26.6823 2.1176 17.9999C2.1176 9.31757 9.31764 2.11766 18 2.11766C26.6824 2.11766 33.8824 9.31757 33.8824 17.9999C33.8824 26.6823 26.6824 33.8824 18 33.8824Z"/>
+                    </svg>
+                </a>
+                <div class="form-card">
+                    <h2 class="fs-title">Укажите адрес работ</h2>
+                    <input type="text" class="input-address" placeholder="Москва, МО" />
+                </div>
+                <a class="previous action-button-previous btn">
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.245257 6.41378L5.60177 1.21434C5.92851 0.897152 6.45859 0.897152 6.78533 1.21434C7.11228 1.53174 7.11228 2.04602 6.78533 2.3632L2.85772 6.17578H17.163C17.6253 6.17578 18 6.53955 18 6.98821C18 7.43686 17.6253 7.80064 17.163 7.80064H2.85772L6.7852 11.6132C7.11217 11.9304 7.11217 12.4449 6.7852 12.7621C6.62178 12.9207 6.40756 13.0001 6.19344 13.0001C5.9792 13.0001 5.76496 12.9207 5.60154 12.7621L0.245257 7.56266C-0.0815871 7.24546 -0.0815871 6.73096 0.245257 6.41378Z"/>
+                    </svg>
+                    Назад
+                </a>
+                <a class="next action-button btn">
+                    Дальше
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7548 6.41378L12.3983 1.21434C12.0714 0.897152 11.5415 0.897152 11.2146 1.21434C10.8878 1.53174 10.8878 2.04602 11.2146 2.3632L15.1424 6.17578H0.8369C0.374768 6.17578 -2.39611e-05 6.53955 -2.39611e-05 6.98821C-2.39611e-05 7.43686 0.374768 7.80064 0.8369 7.80064H15.1424L11.2147 11.6132C10.8879 11.9304 10.8879 12.4449 11.2147 12.7621C11.3782 12.9207 11.5924 13.0001 11.8066 13.0001C12.0208 13.0001 12.235 12.9207 12.3984 12.7621L17.7548 7.56266C18.0816 7.24546 18.0816 6.73096 17.7548 6.41378Z"/>
+                    </svg>
+                </a>
+            </fieldset>
+            <fieldset>
+                <a href="#" class="question-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0354 9.31757C16.0943 8.47056 17.5765 8.04706 18.8472 8.47056C20.5412 8.89406 22.0235 10.1648 22.4471 12.0707C22.8707 13.7647 22.2354 15.4589 20.753 16.7294C19.6941 17.5764 18.8472 18.8471 18.8472 20.1178C19.059 20.7531 18.6353 21.1766 18.0002 21.1766C17.3648 21.1766 16.9412 20.7531 16.9412 20.1178C16.9412 18.2119 17.7884 16.3059 19.4825 15.0354C20.3295 14.4 20.5412 13.553 20.3295 12.4942C20.1178 11.6472 19.4825 10.8 18.4236 10.5883C17.5766 10.3765 16.9412 10.5883 16.306 11.0118C15.6707 11.4353 15.459 12.2825 15.459 12.9177C15.459 13.553 15.0354 13.9765 14.4001 13.9765C13.7647 13.9765 13.3413 13.553 13.3413 12.9177C13.3413 11.4353 13.9766 10.1645 15.0354 9.31757ZM16.9412 26.4705C16.9412 26.2588 16.9412 25.8353 17.153 25.6235C17.5765 25.2 18.2118 25.2 18.6352 25.6235C18.847 25.8353 19.0588 26.047 19.0588 26.4705C19.0588 26.6823 18.847 27.1058 18.6352 27.1058C18.6352 27.3175 18.2118 27.5293 18 27.5293C17.7882 27.5293 17.3648 27.3175 17.153 27.1058C16.9412 26.894 16.9412 26.6823 16.9412 26.4705ZM18 -7.99894e-05C8.047 -7.99894e-05 0 8.04706 0 17.9999C0 27.953 8.047 35.9999 18 35.9999C27.953 35.9999 36 27.953 36 17.9999C36 8.04706 27.953 -7.99894e-05 18 -7.99894e-05ZM18 33.8824C9.31764 33.8824 2.1176 26.6823 2.1176 17.9999C2.1176 9.31757 9.31764 2.11766 18 2.11766C26.6824 2.11766 33.8824 9.31757 33.8824 17.9999C33.8824 26.6823 26.6824 33.8824 18 33.8824Z"/>
+                    </svg>
+                </a>
+                <div class="form-card">
+                    <h2 class="fs-title">Укажите площадь объекта в сотках</h2>
+                    <div class="input-box">
+                        <input type="text" class="input-size" placeholder="99"/>
+                        <div class="form-group">
+                            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                            <label for="styled-checkbox-1">Подать документы</label>
+                        </div>
+                    </div>
+                </div>
+                <a class="previous action-button-previous btn">
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.245257 6.41378L5.60177 1.21434C5.92851 0.897152 6.45859 0.897152 6.78533 1.21434C7.11228 1.53174 7.11228 2.04602 6.78533 2.3632L2.85772 6.17578H17.163C17.6253 6.17578 18 6.53955 18 6.98821C18 7.43686 17.6253 7.80064 17.163 7.80064H2.85772L6.7852 11.6132C7.11217 11.9304 7.11217 12.4449 6.7852 12.7621C6.62178 12.9207 6.40756 13.0001 6.19344 13.0001C5.9792 13.0001 5.76496 12.9207 5.60154 12.7621L0.245257 7.56266C-0.0815871 7.24546 -0.0815871 6.73096 0.245257 6.41378Z"/>
+                    </svg>
+                    Назад
+                </a>
+                <a class="next action-button btn">
+                    Дальше
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7548 6.41378L12.3983 1.21434C12.0714 0.897152 11.5415 0.897152 11.2146 1.21434C10.8878 1.53174 10.8878 2.04602 11.2146 2.3632L15.1424 6.17578H0.8369C0.374768 6.17578 -2.39611e-05 6.53955 -2.39611e-05 6.98821C-2.39611e-05 7.43686 0.374768 7.80064 0.8369 7.80064H15.1424L11.2147 11.6132C10.8879 11.9304 10.8879 12.4449 11.2147 12.7621C11.3782 12.9207 11.5924 13.0001 11.8066 13.0001C12.0208 13.0001 12.235 12.9207 12.3984 12.7621L17.7548 7.56266C18.0816 7.24546 18.0816 6.73096 17.7548 6.41378Z"/>
+                    </svg>
+                </a>
+            </fieldset>
+            <fieldset>
+                <a href="#" class="question-icon">
+                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0354 9.31757C16.0943 8.47056 17.5765 8.04706 18.8472 8.47056C20.5412 8.89406 22.0235 10.1648 22.4471 12.0707C22.8707 13.7647 22.2354 15.4589 20.753 16.7294C19.6941 17.5764 18.8472 18.8471 18.8472 20.1178C19.059 20.7531 18.6353 21.1766 18.0002 21.1766C17.3648 21.1766 16.9412 20.7531 16.9412 20.1178C16.9412 18.2119 17.7884 16.3059 19.4825 15.0354C20.3295 14.4 20.5412 13.553 20.3295 12.4942C20.1178 11.6472 19.4825 10.8 18.4236 10.5883C17.5766 10.3765 16.9412 10.5883 16.306 11.0118C15.6707 11.4353 15.459 12.2825 15.459 12.9177C15.459 13.553 15.0354 13.9765 14.4001 13.9765C13.7647 13.9765 13.3413 13.553 13.3413 12.9177C13.3413 11.4353 13.9766 10.1645 15.0354 9.31757ZM16.9412 26.4705C16.9412 26.2588 16.9412 25.8353 17.153 25.6235C17.5765 25.2 18.2118 25.2 18.6352 25.6235C18.847 25.8353 19.0588 26.047 19.0588 26.4705C19.0588 26.6823 18.847 27.1058 18.6352 27.1058C18.6352 27.3175 18.2118 27.5293 18 27.5293C17.7882 27.5293 17.3648 27.3175 17.153 27.1058C16.9412 26.894 16.9412 26.6823 16.9412 26.4705ZM18 -7.99894e-05C8.047 -7.99894e-05 0 8.04706 0 17.9999C0 27.953 8.047 35.9999 18 35.9999C27.953 35.9999 36 27.953 36 17.9999C36 8.04706 27.953 -7.99894e-05 18 -7.99894e-05ZM18 33.8824C9.31764 33.8824 2.1176 26.6823 2.1176 17.9999C2.1176 9.31757 9.31764 2.11766 18 2.11766C26.6824 2.11766 33.8824 9.31757 33.8824 17.9999C33.8824 26.6823 26.6824 33.8824 18 33.8824Z"/>
+                    </svg>
+                </a>
+                <div class="form-card">
+                    <h2 class="fs-title">Оставьте свои данные для расчёта суммы</h2>
+                    <div class="form-user-info">
+                        <div class="main">
+                            <div class="input-box">
+                                <input type="text" name="form-user-name" placeholder="Имя">
+                                <input type="tel" name="form-user-phone" placeholder="Телефон">
+                            </div>
+                            <textarea name="form-comment" id="" placeholder="Комментарий"></textarea>
+                        </div>
+                        <div class="checkbox-box">
+                            <div class="form-group">
+                                <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+                                <label for="styled-checkbox-2">Позвонить на телефон</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="styled-checkbox" id="styled-checkbox-3" type="checkbox" value="value3">
+                                <label for="styled-checkbox-3">Отправить сообщение в WhatsApp</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="styled-checkbox" id="styled-checkbox-4" type="checkbox" value="value4">
+                                <label for="styled-checkbox-4">Отправить сообщение в Viber</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group politic">
+                        <input class="styled-checkbox" id="styled-checkbox-5" type="checkbox" value="value5">
+                        <label for="styled-checkbox-5">Согласие с <a href="#">Политикой персональных данных</a></label>
+                    </div>
+                </div>
+                <a class="previous action-button-previous btn">
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.245257 6.41378L5.60177 1.21434C5.92851 0.897152 6.45859 0.897152 6.78533 1.21434C7.11228 1.53174 7.11228 2.04602 6.78533 2.3632L2.85772 6.17578H17.163C17.6253 6.17578 18 6.53955 18 6.98821C18 7.43686 17.6253 7.80064 17.163 7.80064H2.85772L6.7852 11.6132C7.11217 11.9304 7.11217 12.4449 6.7852 12.7621C6.62178 12.9207 6.40756 13.0001 6.19344 13.0001C5.9792 13.0001 5.76496 12.9207 5.60154 12.7621L0.245257 7.56266C-0.0815871 7.24546 -0.0815871 6.73096 0.245257 6.41378Z"/>
+                    </svg>
+                    Назад
+                </a>
+                <a class="next action-button btn">
+                    Дальше
+                    <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7548 6.41378L12.3983 1.21434C12.0714 0.897152 11.5415 0.897152 11.2146 1.21434C10.8878 1.53174 10.8878 2.04602 11.2146 2.3632L15.1424 6.17578H0.8369C0.374768 6.17578 -2.39611e-05 6.53955 -2.39611e-05 6.98821C-2.39611e-05 7.43686 0.374768 7.80064 0.8369 7.80064H15.1424L11.2147 11.6132C10.8879 11.9304 10.8879 12.4449 11.2147 12.7621C11.3782 12.9207 11.5924 13.0001 11.8066 13.0001C12.0208 13.0001 12.235 12.9207 12.3984 12.7621L17.7548 7.56266C18.0816 7.24546 18.0816 6.73096 17.7548 6.41378Z"/>
+                    </svg>
+                </a>
+            </fieldset>
+            <fieldset>
+                <div class="form-card">
+                    <h2 class="fs-title">Примерная сумма проекта</h2>
+                    <div class="amount-info">
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name"><span>1</span>.Услуга</div>
+                                <div class="dots"></div>
+                                <div class="value">Исполнительная съёмка</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">По адресу:</div>
+                                <div class="dots"></div>
+                                <div class="value">Москва, МО</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Площадь:</div>
+                                <div class="dots"></div>
+                                <div class="value">21 сотка</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Ориентировочная<br>cтоимость услуги:</div>
+                                <div class="dots"></div>
+                                <div class="value tr">10 000 р</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Скидка</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9%</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Стоимость услуги<br>c учетом скидки:</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9 000 р</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Акция</div>
+                                <div class="dots"></div>
+                                <div class="value action">Геоакция на март</div>
+                            </div>
+                            <a href="#" class="info-button">
+                                <div class="text">
+                                    <span class="term">Ориентировочный бюджет</span>
+                                    <span class="term">проекта с учетом скидки:</span>
+                                </div>
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0C24.8223 0 32.0001 7.17781 32.0001 16C32.0001 24.8221 24.8223 31.9999 16 31.9999C7.17786 31.9999 0 24.8221 0 16C0 7.17781 7.17786 0 16 0ZM16 1.59861C8.05882 1.59861 1.59876 8.05871 1.59876 16C1.59876 23.9412 8.05882 30.4013 16 30.4013C23.9413 30.4013 30.4014 23.9412 30.4014 16C30.4014 8.05871 23.9413 1.59861 16 1.59861ZM21.0637 19.0211L16.5677 23.5171C16.4112 23.6737 16.2089 23.7454 16 23.7454C15.7913 23.7454 15.5889 23.6671 15.4324 23.5105L10.9364 19.0148C10.6232 18.7015 10.6232 18.199 10.9364 17.8858C11.2497 17.5726 11.7521 17.5726 12.0653 17.8858L15.1974 21.0178V9.05053C15.1974 8.6069 15.5563 8.24792 16 8.24792C16.4438 8.24792 16.8027 8.6069 16.8027 9.05053V21.0244L19.9348 17.8924C20.2481 17.5791 20.7504 17.5791 21.0637 17.8924C21.3769 18.2056 21.3769 18.7081 21.0637 19.0211Z" fill="#589BDA"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="amount-info">
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name"><span>2</span>.Услуга</div>
+                                <div class="dots"></div>
+                                <div class="value">Исполнительная съёмка</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">По адресу:</div>
+                                <div class="dots"></div>
+                                <div class="value">Москва, МО</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Площадь:</div>
+                                <div class="dots"></div>
+                                <div class="value">21 сотка</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Ориентировочная<br>cтоимость услуги:</div>
+                                <div class="dots"></div>
+                                <div class="value tr">10 000 р</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Скидка</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9%</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Стоимость услуги<br>c учетом скидки:</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9 000 р</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Акция</div>
+                                <div class="dots"></div>
+                                <div class="value action">Геоакция на март</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amount-info">
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name"><span>1</span>.Услуга</div>
+                                <div class="dots"></div>
+                                <div class="value">Исполнительная съёмка</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">По адресу:</div>
+                                <div class="dots"></div>
+                                <div class="value">Москва, МО</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Площадь:</div>
+                                <div class="dots"></div>
+                                <div class="value">21 сотка</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Ориентировочная<br>cтоимость услуги:</div>
+                                <div class="dots"></div>
+                                <div class="value tr">10 000 р</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Скидка</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9%</div>
+                            </div>
+                            <div class="amount-block__item">
+                                <div class="name">Стоимость услуги<br>c учетом скидки:</div>
+                                <div class="dots"></div>
+                                <div class="value blue">9 000 р</div>
+                            </div>
+                        </div>
+                        <div class="amount-info__block">
+                            <div class="amount-block__item">
+                                <div class="name">Акция</div>
+                                <div class="dots"></div>
+                                <div class="value action">Геоакция на март</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="name">Ориентировочный бюджет<br>проекта с учётом скидки:</div>
+                    <div class="dots"></div>
+                    <div class="value">15 990 р.</div>
+                </div>
+                <div class="button-box">
+                    <button type="submit" class="btn big">Сделать ещё один расчёт</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+</div>
+</body>
+</html>
